@@ -33,6 +33,7 @@
     margin: 50px auto;
     animation: heartbeat 1s infinite ease-in-out, glow 2s infinite ease-in-out;
     border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 0, 0, 0.5); /* Ombre ajoutée */
 }
 
 .heart::before,
@@ -41,8 +42,12 @@
     position: absolute;
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
     background-color: red;
+    box-shadow: inherit; /* Hérite de l'ombre du cœur principal */
 }
 
 .heart::before {

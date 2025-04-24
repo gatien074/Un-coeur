@@ -6,6 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
         heart.classList.add("vibrate");
         setTimeout(() => {
             heart.classList.remove("vibrate");
-        }, 100); // Durée de la vibration
+        }, 10); // Durée de la vibration
     }, 2000); // Intervalle entre les vibrations
 });
